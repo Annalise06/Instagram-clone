@@ -26,8 +26,8 @@ const Login = () => {
 
   return (
     <Fragment>
-      <div className="flex flex-col bg-gray-100 justify-center items-center h-screen">
-        <div className="flex flex-col bg-white mb-3 border border-gray-300 items-center w-80 pt-8 pb-4">
+      <div className="flex flex-col bg-gray-100 justify-center justify- items-center h-screen lg:pt-8">
+        <div className="flex flex-col bg-white lg:pt-10 lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80">
           <Link to="/">
             <img
               alt="Instagram"
@@ -35,7 +35,7 @@ const Login = () => {
             />
           </Link>
 
-          <form ref={formRef} className="flex flex-col gap-1 mt-8 w-64">
+          <form ref={formRef} className="flex flex-col gap-2 mt-8 w-64">
             <div className="relative">
               <input
                 onChange={handleChange}
@@ -75,33 +75,36 @@ const Login = () => {
               Log In
             </button>
           </form>
-          <div className="flex space-x-2 w-64 mt-4 items-center">
+          <div className="flex space-x-2 w-64 mt-8 items-center">
             <span className="bg-gray-300 h-px flex-1" />
             <span className="p-2 text-xs text-gray-400 font-semibold">OR</span>
             <span className="bg-gray-300 h-px flex-1" />
           </div>
-          <button className="flex mt-4 ">
+          <button className="flex mt-8 ">
             <div className="flex justify-between bg-no-repeat mr-1">
-              <FaFacebookSquare className="bg-center pt-1" size={25} />
+              <FaFacebookSquare
+                className="bg-center text-blue-500 pt-1"
+                size={25}
+              />
               <span className="ml-2 pt-1 text-sm text-blue-800 font-semibold">
                 Login With Facebook
               </span>
             </div>
           </button>
-          <button className="bg-white text-sm py-4 text-center hover:text-blue-500">
+          <button className="bg-white text-sm mt-4 py-4 text-center hover:text-blue-500">
             <a href="">Forgot password?</a>
           </button>
         </div>
-        <div className="bg-white w-80 py-4 border border-gray-300 text-center">
+        <div className="bg-white w-full lg:w-80 lg:pt-4 pb-4 lg:border lg:border-gray-300 text-center">
           <span className="text-sm mr-2"> Don't have an account?</span>
           <a href="/register" className="text-blue-500 text-sm font-semibold">
             Sign Up
           </a>
         </div>
-        <div className="mt-3 text-center">
+        <div className="w-full text-center bg-white pt-2 lg:bg-gray-100">
           <span>Get the app</span>
-          <div className="flex justify-between mt-3 text-center">
-            <div className=" bg-no-repeat bg-left w-36">
+          <div className="mb-3 flex justify-center mt-3 text-center">
+            <div className="bg-no-repeat bg-left w-36">
               <img
                 alt="appstore"
                 src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
