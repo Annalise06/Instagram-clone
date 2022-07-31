@@ -3,7 +3,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 const Register = () => {
   return (
-    <div className="flex flex-col justify-center lg:items-center h-screen lg:pt-8 mx-auto">
+    <div className="bg-gray-100 flex flex-col justify-center lg:items-center h-fit lg:pt-8 mx-auto">
       <div className="flex flex-col bg-white lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80 md:w-80">
         <Link to="/">
           <img
@@ -70,7 +70,7 @@ const Register = () => {
               Password
             </label>
           </div>
-          <p className="text-sm text-gray-400 text-center">
+          <p className="text-sm text-gray-400 text-center pb-4">
             People who use our service may have uploaded your contact
             information to Instagram. Learn More
             <br />
@@ -78,6 +78,73 @@ const Register = () => {
             Cookies Policy .
           </p>
         </form>
+      </div>
+      <div className="bg-white w-full lg:w-80 lg:pt-4 pb-4 lg:border lg:border-gray-300 text-center">
+        <span className="text-sm mr-2"> Already have an account?</span>
+        <a href="/login" className="text-blue-500 text-sm font-semibold">
+          Log in
+        </a>
+      </div>
+      <div className="w-full text-center bg-white pt-2 lg:bg-gray-100">
+        <span>Get the app</span>
+        <div className="mb-3 flex justify-center mt-3 text-center">
+          <div className="bg-no-repeat bg-left w-36">
+            <img
+              alt="appstore"
+              src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+            />
+          </div>
+
+          <div className="bg-no-repeat bg-left w-36 ml-2">
+            <img
+              alt="googleplay"
+              src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="lg:bg-gray-100 flex flex-row justify-between pt-8 pb-10 w-full">
+        <ul className="flex justify-center text-sm text-gray-500 w-full text-center space-x-1 gap-3">
+          <li>
+            <a href="">Meta</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">Jobs</a>
+          </li>
+          <li>
+            <a href="">Help</a>
+          </li>
+          <li>
+            <a href="">API</a>
+          </li>
+          <li>
+            <a href="">Privacy</a>
+          </li>
+          <li>
+            <a href="">Terms</a>
+          </li>
+          <li>
+            <a href="">Top Accounts</a>
+          </li>
+          <li>
+            <a href="">Hashtags</a>
+          </li>
+          <li>
+            <a href="">Locations</a>
+          </li>
+          <li>
+            <a href="">Instagram Lite</a>
+          </li>
+          <li>
+            <a href="">Contact Uploading and Non-users</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
