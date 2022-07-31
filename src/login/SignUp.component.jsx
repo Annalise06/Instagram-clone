@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 const Register = () => {
   return (
     <div className="bg-gray-100 flex flex-col justify-center lg:items-center h-fit lg:pt-8 mx-auto">
-      <div className="flex flex-col bg-white lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80 md:w-80">
+      <div className="flex flex-col bg-white lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80">
         <Link to="/">
           <img
             alt="Instagram"
@@ -77,6 +77,9 @@ const Register = () => {
             <br /> By signing up, you agree to our Terms , Privacy Policy and
             Cookies Policy .
           </p>
+          <button className="bg-blue-600 mt-2 text-sm text-center text-white py-1 rounded font-medium hover:bg-blue-500">
+            Sign Up
+          </button>
         </form>
       </div>
       <div className="bg-white w-full lg:w-80 lg:pt-4 pb-4 lg:border lg:border-gray-300 text-center">
@@ -103,47 +106,51 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <div className="lg:bg-gray-100 flex flex-row justify-between pt-8 pb-10 w-full">
-        <ul className="flex justify-center text-sm text-gray-500 w-full text-center space-x-1 gap-3">
-          <li>
-            <a href="">Meta</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <a href="">Jobs</a>
-          </li>
-          <li>
-            <a href="">Help</a>
-          </li>
-          <li>
-            <a href="">API</a>
-          </li>
-          <li>
-            <a href="">Privacy</a>
-          </li>
-          <li>
-            <a href="">Terms</a>
-          </li>
-          <li>
-            <a href="">Top Accounts</a>
-          </li>
-          <li>
-            <a href="">Hashtags</a>
-          </li>
-          <li>
-            <a href="">Locations</a>
-          </li>
-          <li>
-            <a href="">Instagram Lite</a>
-          </li>
-          <li>
-            <a href="">Contact Uploading and Non-users</a>
-          </li>
+      <div className="bg-white lg:bg-gray-100 flex flex-row justify-center text-center items-center pt-8 pb-10 w-full">
+        <ul className="flex flex-col lg:flex-row justify-center text-xxs lg:text-xs text-gray-500 w-full text-center space-x-1 gap-3">
+          <div className="flex flex-row justify-center gap-3">
+            <li>
+              <a href="">Meta</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Jobs</a>
+            </li>
+            <li>
+              <a href="">Help</a>
+            </li>
+            <li>
+              <a href="">API</a>
+            </li>
+            <li>
+              <a href="">Privacy</a>
+            </li>
+            <li>
+              <a href="">Terms</a>
+            </li>
+            <li>
+              <a href="">Top Accounts</a>
+            </li>
+          </div>
+          <div className="flex flex-row justify-center gap-3">
+            <li>
+              <a href="">Hashtags</a>
+            </li>
+            <li>
+              <a href="">Locations</a>
+            </li>
+            <li>
+              <a href="">Instagram Lite</a>
+            </li>
+            <li>
+              <a href="">Contact Uploading and Non-users</a>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

@@ -26,8 +26,8 @@ const Login = () => {
 
   return (
     <Fragment>
-      <div className="flex flex-col bg-gray-100 justify-center justify- items-center h-screen lg:pt-8">
-        <div className="flex flex-col bg-white lg:pt-10 lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80">
+      <div className="flex flex-col bg-gray-100 justify-center justify- items-center h-fit lg:pt-8">
+        <div className="flex flex-col bg-white lg:pt-4 lg:mb-3 lg:border lg:border-gray-300 items-center justify-center w-full h-screen lg:w-80">
           <Link to="/">
             <img
               alt="Instagram"
@@ -118,6 +118,53 @@ const Login = () => {
               />
             </div>
           </div>
+        </div>
+        <div className="bg-white lg:bg-gray-100 flex flex-row justify-center text-center items-center pt-8 pb-10 w-full">
+          <ul className="flex flex-col lg:flex-row justify-center text-xxs lg:text-xs text-gray-500 w-full text-center space-x-1 gap-3">
+            <div className="flex flex-row justify-center gap-3">
+              <li>
+                <a href="">Meta</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Jobs</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+              <li>
+                <a href="">API</a>
+              </li>
+              <li>
+                <a href="">Privacy</a>
+              </li>
+              <li>
+                <a href="">Terms</a>
+              </li>
+              <li>
+                <a href="">Top Accounts</a>
+              </li>
+            </div>
+            <div className="flex flex-row justify-center gap-3">
+              <li>
+                <a href="">Hashtags</a>
+              </li>
+              <li>
+                <a href="">Locations</a>
+              </li>
+              <li>
+                <a href="">Instagram Lite</a>
+              </li>
+              <li>
+                <a href="">Contact Uploading and Non-users</a>
+              </li>
+            </div>
+          </ul>
         </div>
       </div>
     </Fragment>
